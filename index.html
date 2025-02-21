@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .dark-mode {
+            background-color: #1a202c;
+            color: #ffffff;
+        }
+        .light-mode {
+            background-color: #ffffff;
+            color: #1a202c;
+        }
+    </style>
+</head>
+<body class="dark-mode">
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600">
+        <div class="text-center">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="rounded-full mx-auto mb-4">
+            <h1 class="text-4xl font-bold text-white">John Doe</h1>
+            <p class="text-xl text-white">Desarrollador Full Stack</p>
+        </div>
+    </section>
+
+    <!-- Sobre Mí -->
+    <section class="py-20 px-10">
+        <h2 class="text-3xl font-bold text-center mb-10">Sobre Mí</h2>
+        <p class="text-center max-w-2xl mx-auto">
+            Desarrollador Full Stack con más de 5 años de experiencia en el desarrollo de aplicaciones web y móviles. Especializado en tecnologías como React, Node.js y MongoDB. Busco oportunidades para contribuir en proyectos innovadores y desafiantes.
+        </p>
+    </section>
+
+    <!-- Habilidades -->
+    <section class="py-20 px-10 bg-gray-100 dark:bg-gray-800">
+        <h2 class="text-3xl font-bold text-center mb-10">Habilidades</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+            <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">React</div>
+            <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">Node.js</div>
+            <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">MongoDB</div>
+            <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">JavaScript</div>
+            <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-md">HTML/CSS</div>
+        </div>
+    </section>
+
+    <!-- Experiencia Profesional -->
+    <section class="py-20 px-10">
+        <h2 class="text-3xl font-bold text-center mb-10">Experiencia Profesional</h2>
+        <div class="space-y-8">
+            <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold">Desarrollador Full Stack</h3>
+                <p class="text-gray-600 dark:text-gray-300">Empresa XYZ | 2019 - Presente</p>
+                <p>Desarrollo y mantenimiento de aplicaciones web y móviles utilizando tecnologías modernas como React y Node.js.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold">Desarrollador Frontend</h3>
+                <p class="text-gray-600 dark:text-gray-300">Empresa ABC | 2017 - 2019</p>
+                <p>Implementación de interfaces de usuario responsivas y optimizadas para SEO.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyectos Destacados -->
+    <section class="py-20 px-10 bg-gray-100 dark:bg-gray-800">
+        <h2 class="text-3xl font-bold text-center mb-10">Proyectos Destacados</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                <img src="https://via.placeholder.com/300" alt="Proyecto 1" class="mb-4 rounded-lg">
+                <h3 class="text-xl font-bold">Proyecto 1</h3>
+                <p>Descripción breve del proyecto y tecnologías utilizadas.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                <img src="https://via.placeholder.com/300" alt="Proyecto 2" class="mb-4 rounded-lg">
+                <h3 class="text-xl font-bold">Proyecto 2</h3>
+                <p>Descripción breve del proyecto y tecnologías utilizadas.</p>
+            </div>
+            <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md">
+                <img src="https://via.placeholder.com/300" alt="Proyecto 3" class="mb-4 rounded-lg">
+                <h3 class="text-xl font-bold">Proyecto 3</h3>
+                <p>Descripción breve del proyecto y tecnologías utilizadas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section class="py-20 px-10">
+        <h2 class="text-3xl font-bold text-center mb-10">Contacto</h2>
+        <form class="max-w-2xl mx-auto">
+            <div class="mb-4">
+                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Nombre</label>
+                <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm dark:bg-gray-700 dark:border-gray-600">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+                <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm dark:bg-gray-700 dark:border-gray-600">
+            </div>
+            <div class="mb-4">
+                <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Mensaje</label>
+                <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm dark:bg-gray-700 dark:border-gray-600"></textarea>
+            </div>
+            <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Redes Sociales -->
+    <section class="py-20 px-10 bg-gray-100 dark:bg-gray-800">
+        <h2 class="text-3xl font-bold text-center mb-10">Redes Sociales</h2>
+        <div class="flex justify-center gap-4">
+            <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-500">LinkedIn</a>
+            <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-gray-900">GitHub</a>
+            <a href="#" class="text-gray-700 dark:text-gray-300 hover:text-blue-400">Twitter</a>
+        </div>
+    </section>
+
+    <!-- Modo Oscuro / Claro Switch -->
+    <div class="fixed bottom-4 right-4">
+        <button id="theme-toggle" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Cambiar Modo</button>
+    </div>
+
+    <script>
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        themeToggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+            localStorage.setItem('theme', body.classList.contains('dark-mode') ? 'dark' : 'light');
+        });
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
+        }
+    </script>
+</body>
+</html>
